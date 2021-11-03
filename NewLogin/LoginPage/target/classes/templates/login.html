@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Login Page</title>
+</head>
+<body>
+<h1>登陆界面</h1>
+<p style="color:red;"th:text="${session.msg}"></p>
+<form action="/login" method="POST">
+    请输入用户名：<input name="username" value="">
+    请输入密码：<input name="password" value="">
+    <button type="submit">登录按钮</button>
+</form>
+</body>
+</html>
